@@ -24,26 +24,34 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <nav className="flex flex-col sm:flex-row gap-6 sm:gap-8 text-sm">
+          <div className="flex flex-col gap-6 sm:gap-8">
+            <nav className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-sm">
+              <a
+                href="/#features"
+                className="text-sage-600 hover:text-sage-950 transition-colors"
+              >
+                Features
+              </a>
+              <Link
+                href="/privacy"
+                className="text-sage-600 hover:text-sage-950 transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
+                className="text-sage-600 hover:text-sage-950 transition-colors"
+              >
+                Terms of Use
+              </Link>
+            </nav>
             <a
-              href="/#features"
-              className="text-sage-600 hover:text-sage-950 transition-colors"
+              href="mailto:foresightsystems00@gmail.com"
+              className="text-sage-500 hover:text-sage-700 transition-colors text-sm"
             >
-              Features
+              foresightsystems00@gmail.com
             </a>
-            <Link
-              href="/privacy"
-              className="text-sage-600 hover:text-sage-950 transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="text-sage-600 hover:text-sage-950 transition-colors"
-            >
-              Terms of Use
-            </Link>
-          </nav>
+          </div>
         </div>
 
         {/* Bottom bar */}

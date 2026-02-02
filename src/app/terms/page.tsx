@@ -884,7 +884,7 @@ export default function TermsOfUse() {
               </p>
               <p>
                 If you believe that any content in the App infringes your
-                copyright, please contact us at support@xema.app with details
+                copyright, please contact us at foresightsystems00@gmail.com with details
                 of the alleged infringement.
               </p>
             </Section>
@@ -1424,7 +1424,7 @@ export default function TermsOfUse() {
               </p>
               <p>
                 Before filing a claim against Xema, you agree to try to resolve
-                the dispute informally by contacting us at support@xema.app. We
+                the dispute informally by contacting us at foresightsystems00@gmail.com. We
                 will try to resolve the dispute informally by contacting you.
                 If a dispute is not resolved within sixty (60) days after
                 submission, you or Xema may bring a formal proceeding.
@@ -1503,7 +1503,7 @@ export default function TermsOfUse() {
               <p>
                 You have the right to opt out of binding arbitration within
                 thirty (30) days of first accepting these Terms by sending
-                written notice of your decision to opt out to support@xema.app
+                written notice of your decision to opt out to foresightsystems00@gmail.com
                 with the subject line &quot;ARBITRATION OPT-OUT.&quot; Your
                 notice must include your name, address, and a clear statement
                 that you want to opt out of this arbitration agreement. If you
@@ -1605,7 +1605,7 @@ export default function TermsOfUse() {
               <p>
                 We may maintain an archive of prior versions of these Terms.
                 You may request a copy of previous versions by contacting us at
-                support@xema.app.
+                foresightsystems00@gmail.com.
               </p>
             </Section>
 
@@ -1702,7 +1702,7 @@ export default function TermsOfUse() {
                 Terms of Use, the App, or our practices, please contact us at:
               </p>
               <p>
-                <strong>Email:</strong> support@xema.app
+                <strong>Email:</strong> foresightsystems00@gmail.com
               </p>
               <p>
                 We will make reasonable efforts to respond to your inquiry

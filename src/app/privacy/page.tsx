@@ -936,14 +936,14 @@ export default function PrivacyPolicy() {
                   <strong>Right to Know:</strong> You have the right to request
                   that we disclose what personal information we collect, use,
                   disclose, and sell about you. You can exercise this right by
-                  contacting us at support@xema.app or using the in-App data
+                  contacting us at foresightsystems00@gmail.com or using the in-App data
                   export feature.
                 </li>
                 <li>
                   <strong>Right to Delete:</strong> You have the right to
                   request deletion of your personal information, subject to
                   certain exceptions. Use the Delete Account feature in Settings
-                  or contact support@xema.app.
+                  or contact foresightsystems00@gmail.com.
                 </li>
                 <li>
                   <strong>Right to Opt-Out of Sale:</strong> We do not sell your
@@ -963,7 +963,7 @@ export default function PrivacyPolicy() {
                   <strong>Right to Correct:</strong> You have the right to
                   request correction of inaccurate personal information. You can
                   correct information through the App or by contacting
-                  support@xema.app.
+                  foresightsystems00@gmail.com.
                 </li>
                 <li>
                   <strong>Right to Limit Use of Sensitive Personal
@@ -976,7 +976,7 @@ export default function PrivacyPolicy() {
                 </li>
               </ul>
               <p>
-                To exercise these rights, email support@xema.app with the
+                To exercise these rights, email foresightsystems00@gmail.com with the
                 subject line &quot;CCPA Privacy Request&quot; or use the in-App
                 tools. We will verify your identity before processing your
                 request and respond within 45 days.
@@ -995,7 +995,7 @@ export default function PrivacyPolicy() {
                   <strong>Right of Access:</strong> You have the right to obtain
                   confirmation as to whether or not your personal data is being
                   processed, and to access that data. Use the in-App data viewer
-                  or request a copy by emailing support@xema.app.
+                  or request a copy by emailing foresightsystems00@gmail.com.
                 </li>
                 <li>
                   <strong>Right to Rectification:</strong> You have the right to
@@ -1008,13 +1008,13 @@ export default function PrivacyPolicy() {
                   have the right to obtain erasure of your personal data in
                   certain circumstances, including where the data is no longer
                   necessary, you withdraw consent, or you object to processing.
-                  Use the Delete Account feature or contact support@xema.app.
+                  Use the Delete Account feature or contact foresightsystems00@gmail.com.
                 </li>
                 <li>
                   <strong>Right to Restriction of Processing:</strong> You have
                   the right to restrict processing of your personal data in
                   certain circumstances, such as when you contest the accuracy
-                  of the data or object to processing. Contact support@xema.app
+                  of the data or object to processing. Contact foresightsystems00@gmail.com
                   to request restrictions.
                 </li>
                 <li>
@@ -1047,7 +1047,7 @@ export default function PrivacyPolicy() {
               </ul>
               <p>
                 To exercise any of these rights, please contact us at
-                support@xema.app with the subject line &quot;GDPR Privacy
+                foresightsystems00@gmail.com with the subject line &quot;GDPR Privacy
                 Request&quot; and specify which right you wish to exercise. We
                 will respond to your request within one month, though this may
                 be extended by two additional months in complex cases.
@@ -1066,7 +1066,7 @@ export default function PrivacyPolicy() {
                 </li>
                 <li>
                   <strong>Email Requests:</strong> For requests that cannot be
-                  completed through the App, email support@xema.app with your
+                  completed through the App, email foresightsystems00@gmail.com with your
                   request. Include your account email and specify which right
                   you wish to exercise.
                 </li>
@@ -1153,7 +1153,7 @@ export default function PrivacyPolicy() {
               <p>
                 If you believe we might have information from or about a child
                 under the minimum age, please contact us immediately at
-                support@xema.app with the subject line &quot;Child Privacy
+                foresightsystems00@gmail.com with the subject line &quot;Child Privacy
                 Concern.&quot;
               </p>
             </Section>
@@ -1261,7 +1261,7 @@ export default function PrivacyPolicy() {
                 Please contact us using the information below:
               </p>
               <p>
-                <strong>Email:</strong> support@xema.app
+                <strong>Email:</strong> foresightsystems00@gmail.com
               </p>
               <p>
                 <strong>Subject Line Guidelines:</strong> To help us route your
@@ -1337,7 +1337,7 @@ export default function PrivacyPolicy() {
                 </li>
                 <li>
                   <strong>Security Information:</strong> For information about
-                  our security practices, email support@xema.app with subject
+                  our security practices, email foresightsystems00@gmail.com with subject
                   &quot;Security Inquiry&quot;
                 </li>
               </ul>
