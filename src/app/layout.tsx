@@ -15,10 +15,10 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://xema.app"),
-  title: "Xema — Stay Ahead of Eczema Flare-Ups",
+  metadataBase: new URL("https://eczemate.ai"),
+  title: "Eczemate — Stay Ahead of Eczema Flare-Ups",
   description:
-    "Predict flare-ups before they happen, track your symptoms, scan products for irritants, and learn what triggers your skin. Xema helps you take control of eczema.",
+    "Predict flare-ups before they happen, track your symptoms, scan products for irritants, and learn what triggers your skin. Eczemate helps you take control of eczema.",
   keywords: [
     "eczema",
     "flare prediction",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "atopic dermatitis",
   ],
   openGraph: {
-    title: "Xema — Stay Ahead of Eczema Flare-Ups",
+    title: "Eczemate — Stay Ahead of Eczema Flare-Ups",
     description:
       "Predict flare-ups, track symptoms, scan products, and learn your triggers. Eczema management, simplified.",
     type: "website",

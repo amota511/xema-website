@@ -3,8 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Terms of Use — Xema",
-  description: "Xema's terms of use. Please read before using the app.",
+  title: "Terms of Use — Eczemate",
+  description: "Eczemate's terms of use. Please read before using the app.",
 };
 
 export default function TermsOfUse() {
@@ -23,10 +23,10 @@ export default function TermsOfUse() {
           <div className="space-y-8">
             <Section title="1. Acceptance of Terms">
               <p>
-                Welcome to Xema. These Terms of Use (the &quot;Terms&quot;)
-                constitute a legally binding agreement between you and Xema
+                Welcome to Eczemate. These Terms of Use (the &quot;Terms&quot;)
+                constitute a legally binding agreement between you and Eczemate
                 (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) governing
-                your access to and use of the Xema mobile application (the
+                your access to and use of the Eczemate mobile application (the
                 &quot;App&quot;), including any content, functionality, and
                 services offered on or through the App.
               </p>
@@ -55,7 +55,7 @@ export default function TermsOfUse() {
 
             <Section title="2. Description of Service">
               <p>
-                Xema is an eczema management application designed to help users
+                Eczemate is an eczema management application designed to help users
                 track and manage their eczema condition. The App is available
                 on both iOS (Apple App Store) and Android (Google Play Store)
                 platforms.
@@ -104,7 +104,7 @@ export default function TermsOfUse() {
                   limited access to certain features
                 </li>
                 <li>
-                  <strong>Xema Plus (Premium Subscription):</strong> Full
+                  <strong>Eczemate Plus (Premium Subscription):</strong> Full
                   access to all features including unlimited photo storage,
                   advanced flare predictions, detailed product scanning,
                   AI-powered skin analysis, and comprehensive food analysis
@@ -121,7 +121,7 @@ export default function TermsOfUse() {
               </p>
               <p>
                 <strong>
-                  XEMA IS NOT A MEDICAL DEVICE AND DOES NOT PROVIDE MEDICAL
+                  ECZEMATE IS NOT A MEDICAL DEVICE AND DOES NOT PROVIDE MEDICAL
                   ADVICE, DIAGNOSIS, OR TREATMENT.
                 </strong>
               </p>
@@ -310,7 +310,7 @@ export default function TermsOfUse() {
 
             <Section title="5. Subscriptions and Billing">
               <p>
-                Xema Plus is a premium subscription service that provides
+                Eczemate Plus is a premium subscription service that provides
                 access to additional features beyond the free tier. All
                 subscriptions are processed through the Apple App Store (for
                 iOS) or Google Play Store (for Android), and are subject to the
@@ -321,7 +321,7 @@ export default function TermsOfUse() {
                 <strong>Subscription Plans:</strong>
               </p>
               <p>
-                Xema Plus is available in the following subscription durations:
+                Eczemate Plus is available in the following subscription durations:
               </p>
               <ul>
                 <li>Monthly subscription (auto-renewable)</li>
@@ -336,14 +336,14 @@ export default function TermsOfUse() {
                 <strong>Free Trial:</strong>
               </p>
               <p>
-                New subscribers to Xema Plus are eligible for a 3-day free
+                New subscribers to Eczemate Plus are eligible for a 3-day free
                 trial. During the trial period, you will have full access to
-                all Xema Plus features at no charge. Important trial terms:
+                all Eczemate Plus features at no charge. Important trial terms:
               </p>
               <ul>
                 <li>
                   The free trial is available to new subscribers only (users
-                  who have not previously subscribed to Xema Plus)
+                  who have not previously subscribed to Eczemate Plus)
                 </li>
                 <li>
                   You must provide valid payment information to start the free
@@ -406,7 +406,7 @@ export default function TermsOfUse() {
                 time. Price changes will take effect at the start of the next
                 subscription period following notice of the price change. We
                 will provide reasonable advance notice of any price increases.
-                Your continued use of Xema Plus after a price change
+                Your continued use of Eczemate Plus after a price change
                 constitutes your agreement to pay the modified price.
               </p>
               <p>
@@ -415,7 +415,7 @@ export default function TermsOfUse() {
               <p>
                 You may cancel your subscription at any time. However,
                 cancellation must be done through your app store account
-                settings, NOT through the Xema App itself.
+                settings, NOT through the Eczemate App itself.
               </p>
               <p>
                 <strong>For iOS (Apple App Store):</strong>
@@ -424,7 +424,7 @@ export default function TermsOfUse() {
                 <li>Open the Settings app on your device</li>
                 <li>Tap your name at the top</li>
                 <li>Tap Subscriptions</li>
-                <li>Tap the Xema Plus subscription</li>
+                <li>Tap the Eczemate Plus subscription</li>
                 <li>Tap Cancel Subscription</li>
               </ul>
               <p>
@@ -434,7 +434,7 @@ export default function TermsOfUse() {
                 <li>Open the Google Play Store app</li>
                 <li>Tap your profile icon</li>
                 <li>Tap Payments &amp; subscriptions &gt; Subscriptions</li>
-                <li>Select the Xema Plus subscription</li>
+                <li>Select the Eczemate Plus subscription</li>
                 <li>Tap Cancel subscription</li>
               </ul>
               <p>
@@ -444,7 +444,7 @@ export default function TermsOfUse() {
               </p>
               <p>
                 <strong>Effect of Cancellation:</strong> If you cancel your
-                subscription, you will retain access to Xema Plus features
+                subscription, you will retain access to Eczemate Plus features
                 until the end of your current billing period. After that, your
                 account will revert to the free tier and you will lose access
                 to premium features. No partial refunds will be provided for
@@ -724,7 +724,7 @@ export default function TermsOfUse() {
                 <li>
                   <strong>Infringe Rights:</strong> Use the App in any manner
                   that infringes upon the intellectual property rights, privacy
-                  rights, or other rights of Xema or any third party
+                  rights, or other rights of Eczemate or any third party
                 </li>
                 <li>
                   <strong>Harm or Exploit Minors:</strong> Use the App to harm,
@@ -819,7 +819,7 @@ export default function TermsOfUse() {
                 code, text, displays, graphics, photographs, images, video,
                 audio, algorithms, user interface, visual interface, interactive
                 features, and the design, selection, and arrangement thereof)
-                are owned by Xema, our licensors, or other providers of such
+                are owned by Eczemate, our licensors, or other providers of such
                 material and are protected by United States and international
                 copyright, trademark, patent, trade secret, and other
                 intellectual property or proprietary rights laws.
@@ -828,8 +828,8 @@ export default function TermsOfUse() {
                 <strong>Trademarks:</strong>
               </p>
               <p>
-                The Xema name, logo, and all related names, logos, product and
-                service names, designs, and slogans are trademarks of Xema or
+                The Eczemate name, logo, and all related names, logos, product and
+                service names, designs, and slogans are trademarks of Eczemate or
                 its affiliates or licensors. You may not use such marks without
                 our prior written permission. All other names, logos, product
                 and service names, designs, and slogans mentioned in the App
@@ -946,7 +946,7 @@ export default function TermsOfUse() {
               <p>
                 The App may contain links to third-party websites, services,
                 applications, or resources (&quot;Third-Party Services&quot;)
-                that are not owned or controlled by Xema. These links are
+                that are not owned or controlled by Eczemate. These links are
                 provided for your convenience only.
               </p>
               <p>
@@ -1038,7 +1038,7 @@ export default function TermsOfUse() {
                 IMPLIED.
               </p>
               <p>
-                XEMA DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
+                ECZEMATE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
                 BUT NOT LIMITED TO:
               </p>
               <ul>
@@ -1129,7 +1129,7 @@ export default function TermsOfUse() {
             <Section title="13. Limitation of Liability">
               <p>
                 TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT
-                SHALL XEMA, ITS AFFILIATES, LICENSORS, SERVICE PROVIDERS,
+                SHALL ECZEMATE, ITS AFFILIATES, LICENSORS, SERVICE PROVIDERS,
                 EMPLOYEES, AGENTS, OFFICERS, OR DIRECTORS BE LIABLE FOR:
               </p>
               <ul>
@@ -1174,7 +1174,7 @@ export default function TermsOfUse() {
               <p>
                 WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING
                 NEGLIGENCE), PRODUCT LIABILITY, OR ANY OTHER LEGAL THEORY, AND
-                WHETHER OR NOT XEMA HAS BEEN INFORMED OF THE POSSIBILITY OF
+                WHETHER OR NOT ECZEMATE HAS BEEN INFORMED OF THE POSSIBILITY OF
                 SUCH DAMAGE.
               </p>
               <p>
@@ -1182,7 +1182,7 @@ export default function TermsOfUse() {
               </p>
               <p>
                 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE TOTAL
-                LIABILITY OF XEMA AND ITS AFFILIATES, LICENSORS, SERVICE
+                LIABILITY OF ECZEMATE AND ITS AFFILIATES, LICENSORS, SERVICE
                 PROVIDERS, EMPLOYEES, AGENTS, OFFICERS, AND DIRECTORS TO YOU
                 FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THE USE OF OR
                 INABILITY TO USE THE APP OR THESE TERMS, WHETHER IN CONTRACT,
@@ -1190,8 +1190,8 @@ export default function TermsOfUse() {
               </p>
               <ul>
                 <li>
-                  THE TOTAL AMOUNT YOU PAID TO XEMA (VIA THE APP STORES) FOR
-                  XEMA PLUS SUBSCRIPTIONS IN THE TWELVE (12) MONTHS PRECEDING
+                  THE TOTAL AMOUNT YOU PAID TO ECZEMATE (VIA THE APP STORES) FOR
+                  ECZEMATE PLUS SUBSCRIPTIONS IN THE TWELVE (12) MONTHS PRECEDING
                   THE CLAIM, OR
                 </li>
                 <li>ONE HUNDRED DOLLARS ($100.00 USD)</li>
@@ -1200,7 +1200,7 @@ export default function TermsOfUse() {
                 <strong>Health-Related Limitations:</strong>
               </p>
               <p>
-                YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT XEMA SHALL HAVE NO
+                YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT ECZEMATE SHALL HAVE NO
                 LIABILITY WHATSOEVER FOR:
               </p>
               <ul>
@@ -1242,14 +1242,14 @@ export default function TermsOfUse() {
               <p>
                 You acknowledge that the limitations of liability set forth in
                 this section are fundamental elements of the agreement between
-                you and Xema, and that the App would not be provided to you
+                you and Eczemate, and that the App would not be provided to you
                 without these limitations.
               </p>
             </Section>
 
             <Section title="14. Indemnification">
               <p>
-                You agree to defend, indemnify, and hold harmless Xema, its
+                You agree to defend, indemnify, and hold harmless Eczemate, its
                 affiliates, licensors, service providers, and their respective
                 officers, directors, employees, contractors, agents, licensors,
                 and suppliers from and against any and all claims, liabilities,
@@ -1314,7 +1314,7 @@ export default function TermsOfUse() {
               </p>
               <ul>
                 <li>
-                  Your access to the App and Xema Plus features will
+                  Your access to the App and Eczemate Plus features will
                   immediately cease
                 </li>
                 <li>
@@ -1322,7 +1322,7 @@ export default function TermsOfUse() {
                   (subject to backup retention periods)
                 </li>
                 <li>
-                  If you have an active Xema Plus subscription, you must
+                  If you have an active Eczemate Plus subscription, you must
                   separately cancel it through your app store account to avoid
                   future charges
                 </li>
@@ -1423,11 +1423,11 @@ export default function TermsOfUse() {
                 <strong>Informal Resolution First:</strong>
               </p>
               <p>
-                Before filing a claim against Xema, you agree to try to resolve
+                Before filing a claim against Eczemate, you agree to try to resolve
                 the dispute informally by contacting us at foresightsystems00@gmail.com. We
                 will try to resolve the dispute informally by contacting you.
                 If a dispute is not resolved within sixty (60) days after
-                submission, you or Xema may bring a formal proceeding.
+                submission, you or Eczemate may bring a formal proceeding.
               </p>
               <p>
                 <strong>Binding Arbitration:</strong>
@@ -1444,7 +1444,7 @@ export default function TermsOfUse() {
                   qualify and remain in small claims court
                 </li>
                 <li>
-                  You or Xema may seek equitable relief in court for
+                  You or Eczemate may seek equitable relief in court for
                   infringement or misuse of intellectual property rights
                 </li>
               </ul>
@@ -1460,10 +1460,10 @@ export default function TermsOfUse() {
                 <strong>No Class Actions:</strong>
               </p>
               <p>
-                YOU AND XEMA AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER
+                YOU AND ECZEMATE AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER
                 ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF
                 OR CLASS MEMBER IN ANY PURPORTED CLASS, REPRESENTATIVE, OR
-                COLLECTIVE ACTION OR PROCEEDING. Unless both you and Xema
+                COLLECTIVE ACTION OR PROCEEDING. Unless both you and Eczemate
                 agree, no arbitrator or judge may consolidate more than one
                 person&apos;s claims or otherwise preside over any form of
                 representative or class proceeding.
@@ -1515,9 +1515,9 @@ export default function TermsOfUse() {
                 <strong>Exceptions to Arbitration:</strong>
               </p>
               <p>
-                Either you or Xema may assert claims, if they qualify, in small
+                Either you or Eczemate may assert claims, if they qualify, in small
                 claims court in the county where you reside or in the county
-                where Xema&apos;s principal place of business is located.
+                where Eczemate&apos;s principal place of business is located.
                 Additionally, either party may seek equitable relief in any
                 court of competent jurisdiction to prevent the actual or
                 threatened infringement, misappropriation, or violation of a
@@ -1628,7 +1628,7 @@ export default function TermsOfUse() {
               <p>
                 However, if the severance of a particular provision would
                 materially alter the fundamental nature of the agreement
-                between you and Xema, these Terms may be terminated in their
+                between you and Eczemate, these Terms may be terminated in their
                 entirety.
               </p>
             </Section>
@@ -1637,14 +1637,14 @@ export default function TermsOfUse() {
               <p>
                 These Terms, together with our Privacy Policy and any other
                 legal notices or additional terms published by us in the App,
-                constitute the entire agreement between you and Xema regarding
+                constitute the entire agreement between you and Eczemate regarding
                 your use of the App and supersede all prior and contemporaneous
                 understandings, agreements, representations, and warranties,
                 both written and oral, regarding the App.
               </p>
               <p>
                 No agency, partnership, joint venture, employment, or
-                franchisee relationship is created between you and Xema as a
+                franchisee relationship is created between you and Eczemate as a
                 result of these Terms or your use of the App.
               </p>
               <p>
@@ -1668,7 +1668,7 @@ export default function TermsOfUse() {
               <p>
                 To the extent that any lawsuit or court proceeding is permitted
                 under these Terms (such as if you opt out of arbitration or for
-                matters not subject to arbitration), you and Xema agree to
+                matters not subject to arbitration), you and Eczemate agree to
                 submit to the exclusive jurisdiction of the state and federal
                 courts located in Delaware for the purpose of litigating all
                 such disputes.

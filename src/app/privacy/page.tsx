@@ -3,8 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Xema",
-  description: "Xema's privacy policy. Learn how we handle your data.",
+  title: "Privacy Policy — Eczemate",
+  description: "Eczemate's privacy policy. Learn how we handle your data.",
 };
 
 export default function PrivacyPolicy() {
@@ -20,18 +20,18 @@ export default function PrivacyPolicy() {
             Effective Date: January 31, 2026
           </p>
 
-          <div className="prose-xema space-y-8">
+          <div className="prose-eczemate space-y-8">
             <Section title="1. Introduction">
               <p>
-                Xema (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;)
+                Eczemate (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;)
                 respects your privacy and is committed to protecting the
                 personal information you share with us. This Privacy Policy
                 describes how we collect, use, disclose, and safeguard your
-                information when you use the Xema mobile application (the
+                information when you use the Eczemate mobile application (the
                 &quot;App&quot;), available on iOS and Android platforms.
               </p>
               <p>
-                Xema is an eczema management application designed to help you
+                Eczemate is an eczema management application designed to help you
                 track symptoms, predict flare-ups, analyze products and foods,
                 monitor your skin with photos, and access educational content.
                 By using the App, you agree to the collection and use of
@@ -214,7 +214,7 @@ export default function PrivacyPolicy() {
                 </li>
                 <li>
                   <strong>Subscription Management:</strong> To process and
-                  manage your Xema Plus subscription, including billing,
+                  manage your Eczemate Plus subscription, including billing,
                   renewals, and access to premium features.
                 </li>
                 <li>
@@ -288,7 +288,7 @@ export default function PrivacyPolicy() {
 
             <Section title="5. Health and Sensitive Data">
               <p>
-                Xema collects and processes health-related information,
+                Eczemate collects and processes health-related information,
                 including symptom logs, body area tracking, skin photographs,
                 and information about your eczema condition. We recognize that
                 health data is highly sensitive and treat it with the utmost
@@ -299,7 +299,7 @@ export default function PrivacyPolicy() {
               </p>
               <ul>
                 <li>
-                  <strong>Not HIPAA-Covered:</strong> Xema is not a healthcare
+                  <strong>Not HIPAA-Covered:</strong> Eczemate is not a healthcare
                   provider, health plan, or healthcare clearinghouse, and
                   therefore is not subject to the Health Insurance Portability
                   and Accountability Act (HIPAA). The App is a wellness and
@@ -342,7 +342,7 @@ export default function PrivacyPolicy() {
                 6.1 Local-First Architecture
               </h3>
               <p>
-                Xema uses a local-first data architecture, which means your data
+                Eczemate uses a local-first data architecture, which means your data
                 is primarily stored on your device using MMKV (a fast,
                 efficient, encrypted storage solution). This approach ensures:
               </p>
@@ -481,7 +481,7 @@ export default function PrivacyPolicy() {
                 version
               </p>
               <p>
-                <strong>Purpose:</strong> Manage Xema Plus subscriptions,
+                <strong>Purpose:</strong> Manage Eczemate Plus subscriptions,
                 process in-app purchases, verify purchase status, provide access
                 to premium features
               </p>
@@ -575,7 +575,7 @@ export default function PrivacyPolicy() {
                 details (handled directly by Apple/Google, not visible to us)
               </p>
               <p>
-                <strong>Purpose:</strong> Process Xema Plus subscriptions and
+                <strong>Purpose:</strong> Process Eczemate Plus subscriptions and
                 in-app purchases
               </p>
               <p>
@@ -587,7 +587,7 @@ export default function PrivacyPolicy() {
 
             <Section title="8. AI-Powered Features">
               <p>
-                Xema uses artificial intelligence to provide enhanced analysis
+                Eczemate uses artificial intelligence to provide enhanced analysis
                 and insights. Understanding how AI features work and what data
                 they use is important for your privacy.
               </p>
@@ -677,7 +677,7 @@ export default function PrivacyPolicy() {
               </h3>
               <p>
                 We do not sell, rent, trade, or otherwise transfer your personal
-                information to third parties for their marketing purposes. Xema
+                information to third parties for their marketing purposes. Eczemate
                 does not display advertisements and does not participate in ad
                 networks. Your health data and personal information are not
                 commodities.
@@ -712,7 +712,7 @@ export default function PrivacyPolicy() {
                   others, investigate fraud, or respond to a government request.
                 </li>
                 <li>
-                  <strong>Business Transfers:</strong> If Xema is involved in a
+                  <strong>Business Transfers:</strong> If Eczemate is involved in a
                   merger, acquisition, asset sale, or bankruptcy, your
                   information may be transferred as part of that transaction. We
                   will provide notice before your information is transferred and
@@ -737,7 +737,7 @@ export default function PrivacyPolicy() {
                 9.3 No Sharing with Healthcare Providers
               </h3>
               <p>
-                Xema does not automatically share your data with healthcare
+                Eczemate does not automatically share your data with healthcare
                 providers, insurers, or health systems. If you wish to share
                 your symptom logs or data with your doctor, you can export your
                 data through the App and share it manually at your discretion.
@@ -836,7 +836,7 @@ export default function PrivacyPolicy() {
 
             <Section title="11. International Data Transfers">
               <p>
-                Xema is operated from the United States. If you are located
+                Eczemate is operated from the United States. If you are located
                 outside the United States, please be aware that information we
                 collect, including personal information and health data, may be
                 transferred to, stored in, and processed in the United States
@@ -1091,7 +1091,7 @@ export default function PrivacyPolicy() {
 
             <Section title="13. Children's Privacy">
               <p>
-                Xema is not intended for use by children. We are committed to
+                Eczemate is not intended for use by children. We are committed to
                 protecting the privacy of children and complying with applicable
                 children&apos;s privacy laws.
               </p>
@@ -1119,7 +1119,7 @@ export default function PrivacyPolicy() {
               </h3>
               <p>
                 If you are a parent or guardian and wish to allow your child
-                (who meets the minimum age requirements) to use Xema, you are
+                (who meets the minimum age requirements) to use Eczemate, you are
                 responsible for:
               </p>
               <ul>
@@ -1324,7 +1324,7 @@ export default function PrivacyPolicy() {
                 Additional Resources
               </h3>
               <p>
-                For more information about Xema, please visit:
+                For more information about Eczemate, please visit:
               </p>
               <ul>
                 <li>
@@ -1343,7 +1343,7 @@ export default function PrivacyPolicy() {
               </ul>
 
               <p className="mt-6">
-                <strong>Thank you for trusting Xema with your health data.</strong> We
+                <strong>Thank you for trusting Eczemate with your health data.</strong> We
                 are committed to transparency, security, and putting your
                 privacy first.
               </p>

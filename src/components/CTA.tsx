@@ -27,7 +27,7 @@ export default function CTA() {
           <span className="block text-sage-300">better days ahead</span>
         </h2>
         <p className="text-lg sm:text-xl text-sage-300/80 leading-relaxed mb-12 max-w-xl mx-auto">
-          Join thousands of people taking control of their eczema. Xema is free
+          Join thousands of people taking control of their eczema. Eczemate is free
           to download with powerful features to help you every day.
         </p>
 

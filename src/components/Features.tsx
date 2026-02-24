@@ -52,7 +52,7 @@ const features = [
   {
     title: "Scan Products",
     description:
-      "Point your camera at any skincare product or scan a barcode. Xema flags irritating ingredients personalized to your skin.",
+      "Point your camera at any skincare product or scan a barcode. Eczemate flags irritating ingredients personalized to your skin.",
     icon: (
       <svg
         className="w-7 h-7"

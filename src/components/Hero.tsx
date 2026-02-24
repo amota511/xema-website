@@ -31,7 +31,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-sage-700 leading-relaxed mb-8 sm:mb-10 max-w-md mx-auto lg:mx-0">
-              Xema predicts flares before they happen, tracks your symptoms, and
+              Eczemate predicts flares before they happen, tracks your symptoms, and
               helps you understand what triggers your skin. Your eczema
               companion, powered by AI.
             </p>
@@ -101,7 +101,7 @@ export default function Hero() {
                       {/* App Header */}
                       <div className="flex items-center justify-between mb-1">
                         <span className="text-[#8FAEA3] font-bold text-sm sm:text-base tracking-tight">
-                          xema
+                          eczemate
                         </span>
                         <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white flex items-center justify-center shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
                           <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#5F6F68]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

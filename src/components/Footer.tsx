@@ -10,11 +10,11 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2.5 mb-3">
               <div className="w-8 h-8 rounded-xl bg-sage-500 flex items-center justify-center">
                 <span className="text-white font-display font-bold text-sm tracking-tight">
-                  x
+                  e
                 </span>
               </div>
               <span className="font-display font-bold text-xl tracking-tight text-sage-950">
-                xema
+                eczemate
               </span>
             </Link>
             <p className="text-sage-500 text-sm max-w-xs">
@@ -57,7 +57,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sage-400 text-sm">
-            &copy; {new Date().getFullYear()} Xema. All rights reserved.
+            &copy; {new Date().getFullYear()} Eczemate. All rights reserved.
           </p>
           <p className="text-sage-400 text-xs">
             Made with care for people living with eczema.
