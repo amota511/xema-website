@@ -8,11 +8,9 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5">
           <div className="w-9 h-9 rounded-xl bg-sage-500 flex items-center justify-center shadow-sm">
-            <span className="text-white font-display font-bold text-sm tracking-tight">
-              e
-            </span>
+            <img src="/face-icon.svg" alt="Eczemate" className="w-6 h-6" />
           </div>
-          <span className="font-display font-bold text-2xl tracking-tight text-sage-950">
+          <span className="font-display font-bold text-2xl tracking-tight text-sage-500">
             eczemate
           </span>
         </Link>

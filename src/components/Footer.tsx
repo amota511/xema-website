@@ -9,11 +9,9 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2.5 mb-3">
               <div className="w-8 h-8 rounded-xl bg-sage-500 flex items-center justify-center">
-                <span className="text-white font-display font-bold text-sm tracking-tight">
-                  e
-                </span>
+                <img src="/face-icon.svg" alt="Eczemate" className="w-5 h-5" />
               </div>
-              <span className="font-display font-bold text-xl tracking-tight text-sage-950">
+              <span className="font-display font-bold text-xl tracking-tight text-sage-500">
                 eczemate
               </span>
             </Link>
@@ -46,10 +44,10 @@ export default function Footer() {
               </Link>
             </nav>
             <a
-              href="mailto:foresightsystems00@gmail.com"
+              href="mailto:heyo@foresightcomputers.com"
               className="text-sage-500 hover:text-sage-700 transition-colors text-sm"
             >
-              foresightsystems00@gmail.com
+              heyo@foresightcomputers.com
             </a>
           </div>
         </div>
