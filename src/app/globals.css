@@ -1,6 +1,8 @@
 @import "tailwindcss";
+@import "lenis/dist/lenis.css";
 
 @theme inline {
+  /* Sage Green — Primary Brand */
   --color-sage-50: #F0F5F3;
   --color-sage-100: #DAE5E0;
   --color-sage-200: #C4D5CE;
@@ -13,73 +15,86 @@
   --color-sage-900: #2A3A34;
   --color-sage-950: #1F2A26;
 
+  /* Premium Gold Accent */
   --color-gold: #C7A96B;
   --color-gold-light: #D4BC8A;
 
+  /* Surfaces */
   --color-surface: #F6F7F5;
   --color-card: #FFFFFF;
   --color-border: #E5E7E5;
 
+  /* Typography */
   --font-display: var(--font-fraunces);
   --font-body: var(--font-dm-sans);
 
+  /* Border Radius */
   --radius-card: 24px;
   --radius-button: 16px;
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto; /* Lenis handles smooth scroll */
 }
 
 body {
+  font-family: var(--font-body), system-ui, sans-serif;
   background-color: var(--color-surface);
   color: var(--color-sage-950);
-  font-family: var(--font-body), system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Grain texture overlay */
-.grain::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  opacity: 0.3;
+.grain {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 256px 256px;
 }
 
-/* Floating organic blob animation */
-@keyframes float {
+/* Animated gradient mesh background */
+@keyframes gradient-shift {
   0%, 100% {
-    transform: translate(0, 0) scale(1);
-  }
-  25% {
-    transform: translate(30px, -40px) scale(1.05);
+    background-position: 0% 50%;
   }
   50% {
-    transform: translate(-20px, 20px) scale(0.95);
+    background-position: 100% 50%;
   }
-  75% {
-    transform: translate(15px, 30px) scale(1.02);
+}
+
+.gradient-mesh {
+  background: linear-gradient(
+    135deg,
+    var(--color-sage-50) 0%,
+    var(--color-surface) 25%,
+    var(--color-sage-100) 50%,
+    var(--color-sage-50) 75%,
+    var(--color-surface) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* Floating blob keyframes (used in Hero background) */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  33% {
+    transform: translateY(-20px) scale(1.02);
+  }
+  66% {
+    transform: translateY(10px) scale(0.98);
   }
 }
 
 @keyframes float-reverse {
   0%, 100% {
-    transform: translate(0, 0) scale(1);
+    transform: translateY(0) scale(1) rotate(0deg);
   }
-  25% {
-    transform: translate(-25px, 30px) scale(0.97);
+  33% {
+    transform: translateY(15px) scale(0.97) rotate(2deg);
   }
-  50% {
-    transform: translate(35px, -15px) scale(1.04);
-  }
-  75% {
-    transform: translate(-10px, -35px) scale(0.98);
+  66% {
+    transform: translateY(-25px) scale(1.03) rotate(-1deg);
   }
 }
 
@@ -91,46 +106,22 @@ body {
   animation: float-reverse 25s ease-in-out infinite;
 }
 
-/* Scroll-triggered reveal animation */
-@keyframes reveal-up {
-  from {
-    opacity: 0;
-    transform: translateY(32px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.reveal {
-  opacity: 0;
-}
-
-.reveal.visible {
-  animation: reveal-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-/* Stagger delays for children */
-.stagger-1 { animation-delay: 0ms; }
-.stagger-2 { animation-delay: 120ms; }
-.stagger-3 { animation-delay: 240ms; }
-.stagger-4 { animation-delay: 360ms; }
-
-/* Smooth link underline animation */
+/* Link underline animation */
 .link-underline {
   position: relative;
 }
+
 .link-underline::after {
   content: "";
   position: absolute;
-  bottom: -2px;
   left: 0;
-  width: 0;
+  bottom: -2px;
   height: 1.5px;
+  width: 0;
   background-color: var(--color-sage-500);
   transition: width 0.3s ease;
 }
+
 .link-underline:hover::after {
   width: 100%;
 }
