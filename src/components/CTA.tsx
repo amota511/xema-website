@@ -70,7 +70,7 @@ export default function CTA() {
             <img
               src="/screenshots/phone-routine.png"
               alt="Eczemate app home screen"
-              className="w-[240px] sm:w-[260px] h-auto"
+              className="w-[280px] sm:w-[320px] h-auto"
               loading="lazy"
             />
           </motion.div>

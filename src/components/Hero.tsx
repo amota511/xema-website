@@ -5,7 +5,7 @@ import { AnimatedHeadline, FadeUp } from "./AnimatedText";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden gradient-mesh">
+    <section className="relative min-h-screen flex items-center gradient-mesh">
       {/* Floating blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="blob absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-sage-200/40 blur-3xl" />
@@ -26,14 +26,14 @@ export default function Hero() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sage-200 bg-white/60 backdrop-blur-sm mb-8">
                 <span className="w-2 h-2 rounded-full bg-sage-500 animate-pulse" />
                 <span className="text-sm font-medium text-sage-700 tracking-wide">
-                  Predict &middot; Understand &middot; Protect
+                  Eczema Care App for iOS
                 </span>
               </div>
             </FadeUp>
 
             {/* Headline */}
             <AnimatedHeadline
-              text="Stay ahead of your next flare"
+              text="Eczema care that actually works"
               as="h1"
               className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-sage-950 tracking-tight leading-[1.05]"
             />
@@ -41,8 +41,8 @@ export default function Hero() {
             {/* Subtext */}
             <FadeUp delay={0.4}>
               <p className="mt-6 text-lg sm:text-xl text-sage-700 leading-relaxed max-w-md">
-                Predict flare-ups, scan products for irritants, track what
-                triggers your skin, and build a routine that works.
+                Predict flare-ups before they happen, scan products for
+                irritants, and build a daily routine to protect your skin.
               </p>
             </FadeUp>
 
@@ -83,8 +83,8 @@ export default function Hero() {
           >
             <img
               src="/screenshots/phone-routine.png"
-              alt="Eczemate app home screen"
-              className="w-[280px] sm:w-[300px] h-auto"
+              alt="Eczemate app showing morning routine and flare risk score"
+              className="w-[320px] sm:w-[360px] lg:w-[400px] h-auto"
               loading="eager"
             />
           </motion.div>

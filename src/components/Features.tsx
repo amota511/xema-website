@@ -179,7 +179,7 @@ function FeaturePhone({
     <motion.img
       src={phone}
       alt="App screenshot"
-      className={`w-[280px] sm:w-[300px] h-auto ${isFirst ? "relative" : "absolute"}`}
+      className={`w-[320px] sm:w-[360px] h-auto ${isFirst ? "relative" : "absolute"}`}
       style={{ opacity }}
       loading="lazy"
     />
