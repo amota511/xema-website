@@ -33,15 +33,11 @@ function PhoneModel({
         />
       </RoundedBox>
 
-      {/* Screen */}
-      <RoundedBox
-        args={[2.15, 4.65, 0.01]}
-        radius={0.2}
-        smoothness={8}
-        position={[0, 0, 0.16]}
-      >
+      {/* Screen — use plane geometry for correct UV texture mapping */}
+      <mesh position={[0, 0, 0.16]}>
+        <planeGeometry args={[2.15, 4.65]} />
         <meshBasicMaterial map={texture} />
-      </RoundedBox>
+      </mesh>
 
       {/* Dynamic Island */}
       <RoundedBox
