@@ -45,7 +45,7 @@ export default function Header() {
             Features
           </a>
           <Link
-            href="/privacy-policy.html"
+            href="/privacy"
             className="text-sm text-sage-700 hover:text-sage-950 transition-colors link-underline"
           >
             Privacy

@@ -187,6 +187,27 @@ export default function PrivacyPolicy() {
                   their authentication flow.
                 </li>
               </ul>
+
+              <h3 className="font-semibold text-sage-900 mt-6 mb-3">
+                2.4 Google Sign-In and Google User Data
+              </h3>
+              <p>
+                If you choose to sign in with Google, we receive limited Google
+                user data through Firebase Authentication, such as your email
+                address, display name, profile image if provided by Google, and
+                a unique Google or Firebase account identifier. We use this data
+                only to create and secure your Eczemate account, let you sign
+                in, sync your app data, provide support, and prevent abuse.
+              </p>
+              <p>
+                Eczemate does not sell Google user data. Eczemate does not use
+                Google user data for advertising, retargeting, determining
+                creditworthiness, lending, data brokerage, or training
+                artificial intelligence models. We share Google user data only
+                with service providers that are necessary to provide or improve
+                Eczemate, such as Firebase Authentication and Google Cloud
+                infrastructure.
+              </p>
             </Section>
 
             <Section title="3. How We Use Your Information">

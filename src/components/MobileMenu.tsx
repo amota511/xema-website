@@ -54,7 +54,7 @@ export default function MobileMenu() {
                 Features
               </a>
               <Link
-                href="/privacy-policy.html"
+                href="/privacy"
                 onClick={() => setIsOpen(false)}
                 className="text-sage-700 hover:text-sage-950 py-2 transition-colors"
               >
