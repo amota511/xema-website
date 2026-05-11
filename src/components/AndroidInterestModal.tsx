@@ -128,8 +128,8 @@ export default function AndroidInterestModal({
                   Android is on the way.
                 </h2>
                 <p className="mt-4 text-sage-600">
-                  Want an email when it&apos;s ready? Leave your address and
-                  we&apos;ll only use it for the Android launch.
+                  Want a quick note when it launches? Add your email and
+                  we&apos;ll let you know when the Android app is ready.
                 </p>
 
                 <form onSubmit={handleSubmit} className="mt-7 space-y-3">

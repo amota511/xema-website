@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { AnimatedHeadline, FadeUp } from "./AnimatedText";
-import { CurrentTabMockup, TAB_MOCKUPS } from "./AppMockups";
+import { TAB_MOCKUPS } from "./AppMockups";
 
 const tabs = [
   ["home", "Daily check-in"],
@@ -24,7 +24,7 @@ export default function Features() {
             </span>
           </FadeUp>
           <AnimatedHeadline
-            text="A place for the clues you keep trying to remember."
+            text="One app for the daily work of eczema care."
             as="h2"
             className="font-display text-4xl font-bold leading-tight text-sage-950 sm:text-5xl lg:text-6xl"
           />
@@ -42,7 +42,7 @@ export default function Features() {
             return (
               <motion.article
                 key={key}
-                className="overflow-hidden rounded-2xl border border-sage-200 bg-white shadow-sm shadow-sage-900/5"
+                className="rounded-2xl border border-sage-200 bg-white shadow-sm shadow-sage-900/5"
                 initial={{ opacity: 0, y: 32 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
@@ -62,9 +62,6 @@ export default function Features() {
                   <p className="mt-5 text-base leading-7 text-sage-600">
                     {tab.subtitle}
                   </p>
-                </div>
-                <div className="flex min-h-[500px] items-start justify-center bg-sage-50 px-6 pt-8">
-                  <CurrentTabMockup kind={key} className="w-[250px]" />
                 </div>
               </motion.article>
             );

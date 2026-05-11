@@ -6,7 +6,7 @@ import { AnimatedHeadline, FadeUp } from "./AnimatedText";
 const steps = [
   {
     number: "1",
-    title: "Save the suspects",
+    title: "Scan products and food",
     description: "Scan a lotion, body wash, snack, or meal when you wonder if it matters.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -16,7 +16,7 @@ const steps = [
   },
   {
     number: "2",
-    title: "Mark the day",
+    title: "Log symptoms and routines",
     description:
       "Add the skin score, routine, sleep, foods, products, and weather you actually remember.",
     icon: (
@@ -27,7 +27,7 @@ const steps = [
   },
   {
     number: "3",
-    title: "Look for the story",
+    title: "Decide what to try next",
     description:
       "Use patterns, notes, and doctor prep to decide what is worth changing next.",
     icon: (
@@ -44,14 +44,14 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <AnimatedHeadline
-            text="Start with the thing you already have: today."
+            text="Build a clearer eczema picture over time."
             as="h2"
             className="font-display text-4xl sm:text-5xl font-bold text-sage-950"
           />
           <FadeUp delay={0.2}>
             <p className="mt-6 text-lg text-sage-600 max-w-xl mx-auto">
-              No diagnosis. No guilt. Just small logs that make the next flare
-              a little less mysterious.
+              Scan what you use, log what changed, and build a clearer record
+              for the next care decision.
             </p>
           </FadeUp>
         </div>

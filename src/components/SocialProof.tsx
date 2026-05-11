@@ -24,11 +24,11 @@ export default function SocialProof() {
         <FadeUp delay={0.2}>
           <blockquote className="mx-auto max-w-3xl text-center">
             <p className="font-display text-3xl leading-tight text-sage-950 sm:text-4xl">
-              Built for the messy days between appointments.
+              Eczema care is easier when the details are in one place.
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-sage-600">
-              The days when a new lotion, a rough night of sleep, or a random
-              snack might matter, but nobody can remember it all later.
+              Keep products, meals, routines, sleep, weather, notes, and
+              photos together so you can look back without relying on memory.
             </p>
           </blockquote>
         </FadeUp>

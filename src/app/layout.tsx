@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://eczemate.app"),
   title: "Eczemate - Eczema Tracking for Children and Adults",
   description:
-    "Track routines, foods, products, sleep, weather, and notes in one calm place, so eczema patterns are easier to remember.",
+    "Everything you need to manage eczema: scan products and foods, track symptoms and routines, and prepare for better care decisions.",
   keywords: [
     "eczema",
     "flare prediction",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Eczemate - Eczema Tracking for Children and Adults",
     description:
-      "Track routines, foods, products, sleep, weather, and notes in one calm place.",
+      "Everything you need to manage eczema: scans, tracking, routines, notes, and doctor prep.",
     type: "website",
     images: ["/icon.png"],
   },
