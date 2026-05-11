@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Links */}
           <div className="flex gap-8 text-sm">
             <Link
-              href="/privacy"
+              href="/privacy-policy.html"
               className="hover:text-sage-200 transition-colors"
             >
               Privacy
