@@ -15,6 +15,12 @@ const wordVariants: Variants = {
   }),
 };
 
+const motionTags = {
+  h1: motion.h1,
+  h2: motion.h2,
+  h3: motion.h3,
+};
+
 interface AnimatedHeadlineProps {
   text: string;
   className?: string;
@@ -27,7 +33,7 @@ export function AnimatedHeadline({
   as: Tag = "h1",
 }: AnimatedHeadlineProps) {
   const words = text.split(" ");
-  const MotionTag = motion.create(Tag);
+  const MotionTag = motionTags[Tag];
 
   return (
     <MotionTag

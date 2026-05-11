@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Terms of Use — Eczemate",
+  title: "Terms of Use - Eczemate",
   description: "Eczemate's terms of use. Please read before using the app.",
 };
 
@@ -13,11 +13,11 @@ export default function TermsOfUse() {
       <Header />
       <main className="pt-28 pb-20">
         <article className="mx-auto max-w-3xl px-6">
-          <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight text-sage-950 mb-4">
+          <h1 className="font-display text-4xl sm:text-5xl font-bold text-sage-950 mb-4">
             Terms of Use
           </h1>
           <p className="text-sage-500 text-sm mb-12">
-            Last updated: January 31, 2026
+            Last updated: May 11, 2026
           </p>
 
           <div className="space-y-8">
@@ -38,7 +38,7 @@ export default function TermsOfUse() {
                 Terms, you must not access or use the App.
               </p>
               <p>
-                <strong>These Terms are effective as of January 31, 2026.</strong>
+                <strong>These Terms are effective as of May 11, 2026.</strong>
               </p>
               <p>
                 <strong>Age Requirement:</strong> You must be at least 13 years
@@ -56,9 +56,9 @@ export default function TermsOfUse() {
             <Section title="2. Description of Service">
               <p>
                 Eczemate is an eczema management application designed to help users
-                track and manage their eczema condition. The App is available
-                on both iOS (Apple App Store) and Android (Google Play Store)
-                platforms.
+                track and manage their eczema condition. The App is currently
+                available for iOS through the Apple App Store. Android is not
+                yet available.
               </p>
               <p>
                 <strong>Key Features:</strong>
@@ -85,8 +85,9 @@ export default function TermsOfUse() {
                 </li>
                 <li>
                   <strong>Skin Photo Tracking:</strong> Upload and store photos
-                  of your skin with AI-powered analysis to track changes over
-                  time
+                  of your skin to track changes over time. Eczemate does not
+                  use AI to diagnose skin conditions or assign skin severity
+                  from photos
                 </li>
                 <li>
                   <strong>Treatment &amp; Routine Tracking:</strong> Create and
@@ -103,18 +104,15 @@ export default function TermsOfUse() {
                 <strong>Service Tiers:</strong>
               </p>
               <p>
-                The App operates on a freemium model with two service tiers:
+                The App requires an active Eczemate Pro subscription after
+                onboarding and any limited previews shown before purchase:
               </p>
               <ul>
                 <li>
-                  <strong>Free Tier:</strong> Symptom tracking, flare-up
-                  predictions, routine and treatment tracking, product
-                  scanning, and limited AI-powered analyses
-                </li>
-                <li>
-                  <strong>Eczemate Pro (Premium Subscription):</strong> Everything
-                  in the free tier plus unlimited AI-powered analyses for
-                  skin photos, product ingredients, and food items
+                  <strong>Eczemate Pro (Premium Subscription):</strong> Access
+                  to the App&apos;s core trackers, scans, routines, insights,
+                  exports, and AI-powered app features, subject to any usage
+                  limits shown in the App
                 </li>
               </ul>
             </Section>
@@ -246,8 +244,8 @@ export default function TermsOfUse() {
                   Apple ID (iOS devices)
                 </li>
                 <li>
-                  <strong>Guest/Anonymous Accounts:</strong> Limited
-                  functionality without full registration
+                  <strong>Google Sign In:</strong> Authentication through your
+                  Google account
                 </li>
               </ul>
               <p>
@@ -303,22 +301,16 @@ export default function TermsOfUse() {
                 due to unauthorized use of your account.
               </p>
               <p>
-                <strong>Guest Accounts:</strong> If you choose to use the App
-                as a guest without creating a full account, you may have
-                limited access to certain features, and your data may not be
-                backed up or recoverable if you delete the App or switch
-                devices.
+                Anonymous and guest accounts are not currently supported.
               </p>
             </Section>
 
             <Section title="5. Subscriptions and Billing">
               <p>
                 Eczemate Pro is a premium subscription service that provides
-                access to additional features beyond the free tier. All
-                subscriptions are processed through the Apple App Store (for
-                iOS) or Google Play Store (for Android), and are subject to the
-                terms and policies of these platforms in addition to these
-                Terms.
+                access to Eczemate&apos;s core features. Subscriptions are
+                currently processed through the Apple App Store and are subject
+                to Apple&apos;s terms and policies in addition to these Terms.
               </p>
               <p>
                 <strong>Subscription Plans:</strong>
@@ -384,8 +376,8 @@ export default function TermsOfUse() {
               </p>
               <ul>
                 <li>
-                  All payments are processed through your Apple App Store
-                  account (iOS) or Google Play Store account (Android)
+                  All payments are currently processed through your Apple App
+                  Store account
                 </li>
                 <li>
                   You will be charged through the payment method associated
@@ -398,7 +390,7 @@ export default function TermsOfUse() {
                 </li>
                 <li>
                   We do not have access to your payment information; all
-                  billing is managed by Apple or Google
+                  billing is managed by Apple
                 </li>
               </ul>
               <p>
@@ -431,16 +423,6 @@ export default function TermsOfUse() {
                 <li>Tap Cancel Subscription</li>
               </ul>
               <p>
-                <strong>For Android (Google Play Store):</strong>
-              </p>
-              <ul>
-                <li>Open the Google Play Store app</li>
-                <li>Tap your profile icon</li>
-                <li>Tap Payments &amp; subscriptions &gt; Subscriptions</li>
-                <li>Select the Eczemate Pro subscription</li>
-                <li>Tap Cancel subscription</li>
-              </ul>
-              <p>
                 <strong>Cancellation Timing:</strong> To avoid being charged
                 for the next billing period, you must cancel your subscription
                 at least 24 hours before the renewal date.
@@ -471,10 +453,8 @@ export default function TermsOfUse() {
               </ul>
               <p>
                 If you believe you were charged in error, please contact Apple
-                Support or Google Play Support, as all billing is managed by
-                these platforms. Refund policies are governed by the Apple App
-                Store Terms of Service or Google Play Terms of Service, as
-                applicable.
+                Support, as billing is managed by Apple. Refund policies are
+                governed by the Apple App Store Terms of Service.
               </p>
               <p>
                 <strong>App Store Terms:</strong>
@@ -487,10 +467,6 @@ export default function TermsOfUse() {
                 <li>
                   iOS: Apple Media Services Terms and Conditions
                   (https://www.apple.com/legal/internet-services/itunes/)
-                </li>
-                <li>
-                  Android: Google Play Terms of Service
-                  (https://play.google.com/about/play-terms/)
                 </li>
               </ul>
             </Section>
@@ -599,8 +575,8 @@ export default function TermsOfUse() {
               <p>
                 The App utilizes artificial intelligence (AI) and machine
                 learning technologies to provide certain features, including
-                but not limited to skin photo analysis, flare-up predictions,
-                and personalized insights. These AI features are powered by
+                but not limited to ingredient analysis, food identification,
+                pattern support, and personalized insights. These AI features are powered by
                 third-party AI service providers, including OpenAI.
               </p>
               <p>
@@ -622,10 +598,8 @@ export default function TermsOfUse() {
                 definitive or diagnostic. AI-generated results, including:
               </p>
               <ul>
-                <li>Skin condition observations and descriptions</li>
                 <li>Flare-up risk assessments and predictions</li>
                 <li>Trigger identification and recommendations</li>
-                <li>Severity assessments</li>
                 <li>Pattern recognition and insights</li>
               </ul>
               <p>
@@ -659,30 +633,10 @@ export default function TermsOfUse() {
                 proper medical evaluation and guidance.
               </p>
               <p>
-                <strong>Photo Analysis Limitations:</strong>
+                <strong>No Skin Diagnosis:</strong> Eczemate does not use AI to
+                diagnose skin conditions, assess skin severity from photos, or
+                replace physical examination by a dermatologist.
               </p>
-              <p>
-                AI analysis of skin photos has significant limitations. Photo
-                quality, lighting, camera angle, and other factors can affect
-                the accuracy of AI analysis. The AI cannot:
-              </p>
-              <ul>
-                <li>
-                  Diagnose medical conditions or differentiate between eczema
-                  and other skin conditions
-                </li>
-                <li>
-                  Detect all skin abnormalities or identify serious conditions
-                  that require immediate medical attention
-                </li>
-                <li>
-                  Replace physical examination by a dermatologist
-                </li>
-                <li>
-                  Account for factors not visible in photos (such as itch
-                  level, pain, or underlying health conditions)
-                </li>
-              </ul>
               <p>
                 <strong>Prediction Limitations:</strong>
               </p>
@@ -973,8 +927,9 @@ export default function TermsOfUse() {
               </p>
               <ul>
                 <li>
-                  AI and machine learning services (including OpenAI) for photo
-                  analysis and predictions
+                  AI and machine learning services (including OpenAI) for
+                  ingredient analysis, food identification, pattern support,
+                  and app assistance
                 </li>
                 <li>Cloud hosting and data storage services</li>
                 <li>
@@ -982,8 +937,7 @@ export default function TermsOfUse() {
                 </li>
                 <li>Weather and environmental data providers</li>
                 <li>
-                  Payment processing through Apple App Store and Google Play
-                  Store
+                  Payment processing through Apple App Store
                 </li>
                 <li>Analytics and performance monitoring services</li>
               </ul>
@@ -1718,8 +1672,8 @@ export default function TermsOfUse() {
               </p>
               <p>
                 For subscription billing inquiries, please contact Apple
-                Support or Google Play Support, as all billing is managed
-                through the respective app stores.
+                Support, as billing is currently managed through the Apple App
+                Store.
               </p>
             </Section>
           </div>

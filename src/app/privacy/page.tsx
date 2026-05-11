@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Eczemate",
+  title: "Privacy Policy - Eczemate",
   description: "Eczemate's privacy policy. Learn how we handle your data.",
 };
 
@@ -13,11 +13,11 @@ export default function PrivacyPolicy() {
       <Header />
       <main className="pt-28 pb-20">
         <article className="mx-auto max-w-3xl px-6">
-          <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight text-sage-950 mb-4">
+          <h1 className="font-display text-4xl sm:text-5xl font-bold text-sage-950 mb-4">
             Privacy Policy
           </h1>
           <p className="text-sage-500 text-sm mb-12">
-            Effective Date: January 31, 2026
+            Effective Date: May 11, 2026
           </p>
 
           <div className="prose-eczemate space-y-8">
@@ -28,7 +28,9 @@ export default function PrivacyPolicy() {
                 personal information you share with us. This Privacy Policy
                 describes how we collect, use, disclose, and safeguard your
                 information when you use the Eczemate mobile application (the
-                &quot;App&quot;), available on iOS and Android platforms.
+                &quot;App&quot;), currently available for iOS, and when you
+                submit Android interest or waitlist information through our
+                website.
               </p>
               <p>
                 Eczemate is an eczema management application designed to help you
@@ -40,7 +42,7 @@ export default function PrivacyPolicy() {
                 access or use the App.
               </p>
               <p>
-                This Privacy Policy is effective as of January 31, 2026, and
+                This Privacy Policy is effective as of May 11, 2026, and
                 will remain in effect except with respect to any changes in its
                 provisions in the future, which will be in effect immediately
                 after being posted on this page.
@@ -63,11 +65,10 @@ export default function PrivacyPolicy() {
               <ul>
                 <li>
                   <strong>Account Information:</strong> When you create an
-                  account using Apple Sign In, we collect your name, email
-                  address, and a unique identifier provided by Apple. If you
-                  use an anonymous or guest account, we generate a unique
-                  identifier but do not collect personal identification
-                  information unless you choose to provide it later.
+                  account using Apple Sign In or Google Sign In, we collect
+                  your name, email address, and a unique identifier provided by
+                  the authentication provider. Anonymous and guest accounts are
+                  not currently supported.
                 </li>
                 <li>
                   <strong>Health and Symptom Data:</strong> You may choose to
@@ -78,9 +79,10 @@ export default function PrivacyPolicy() {
                 </li>
                 <li>
                   <strong>Photographs:</strong> You may upload or capture skin
-                  photos to track your eczema progression over time, food photos
-                  for dietary analysis to identify potential triggers, and
-                  product photos for ingredient analysis.
+                  photos to track your eczema progression over time, food
+                  photos for meal logging, and product photos for ingredient
+                  analysis. Eczemate does not use AI to diagnose skin
+                  conditions or assign skin severity from photos.
                 </li>
                 <li>
                   <strong>Product Scans:</strong> When you scan product barcodes
@@ -175,13 +177,14 @@ export default function PrivacyPolicy() {
                 </li>
                 <li>
                   <strong>Product Databases:</strong> Product information,
-                  ingredient lists, and allergen data from OpenFoodFacts and
-                  other product databases when you scan barcodes.
+                  ingredient lists, and allergen data from third-party barcode
+                  and product databases when you scan barcodes.
                 </li>
                 <li>
                   <strong>Authentication Providers:</strong> When you sign in
-                  with Apple Sign In, we receive limited information from Apple
-                  as specified in their authentication flow.
+                  with Apple Sign In or Google Sign In, we receive limited
+                  information from the authentication provider as specified in
+                  their authentication flow.
                 </li>
               </ul>
             </Section>
@@ -205,10 +208,9 @@ export default function PrivacyPolicy() {
                 </li>
                 <li>
                   <strong>AI-Powered Analysis:</strong> To process your product
-                  photos, food photos, and skin photos through artificial
-                  intelligence services to provide ingredient analysis, allergen
-                  warnings, eczema severity assessment, and personalized
-                  recommendations.
+                  photos and food photos through artificial intelligence
+                  services to provide ingredient analysis, allergen warnings,
+                  food identification, and personalized tracking support.
                 </li>
                 <li>
                   <strong>Product and Food Recommendations:</strong> To analyze
@@ -356,13 +358,15 @@ export default function PrivacyPolicy() {
               </h3>
               <p>
                 Eczemate uses a local-first data architecture, which means your data
-                is primarily stored on your device using MMKV (a fast,
-                efficient, encrypted storage solution). This approach ensures:
+                is primarily stored on your device using app-local storage.
+                We currently use an AsyncStorage-compatible persistence layer
+                for Expo compatibility and may move to MMKV in production.
+                This approach helps ensure:
               </p>
               <ul>
                 <li>Your data remains accessible even without internet</li>
                 <li>Faster performance and reduced latency</li>
-                <li>Enhanced privacy through device-level storage</li>
+                <li>Reduced dependency on network availability</li>
                 <li>
                   You maintain control over your data on your physical device
                 </li>
@@ -399,9 +403,11 @@ export default function PrivacyPolicy() {
               <ul>
                 <li>
                   <strong>Encryption at Rest:</strong> Data stored on your
-                  device is encrypted using platform-level encryption (iOS
-                  Keychain, Android Keystore). Data stored in Firebase is
-                  encrypted at rest using AES-256 encryption.
+                  device is protected by the device operating system and app
+                  sandbox. We do not currently add a separate app-level
+                  encryption layer to local persisted tracking data. Data
+                  stored in Firebase is encrypted at rest using Google Cloud
+                  infrastructure encryption.
                 </li>
                 <li>
                   <strong>Encryption in Transit:</strong> All data transmitted
@@ -409,9 +415,9 @@ export default function PrivacyPolicy() {
                   prevent interception.
                 </li>
                 <li>
-                  <strong>Secure Authentication:</strong> We use Apple Sign In
-                  and Firebase Authentication, which employ industry-standard
-                  security protocols including OAuth 2.0.
+                  <strong>Secure Authentication:</strong> We use Apple Sign In,
+                  Google Sign In, and Firebase Authentication, which employ
+                  industry-standard security protocols including OAuth 2.0.
                 </li>
                 <li>
                   <strong>Access Controls:</strong> Strict access controls limit
@@ -512,14 +518,13 @@ export default function PrivacyPolicy() {
               </p>
               <p>
                 <strong>Data Shared:</strong> Product photos, product ingredient
-                text, food photos, skin photos, symptom context (when relevant
-                to analysis)
+                text, food photos, and relevant text context for AI-powered
+                app features
               </p>
               <p>
                 <strong>Purpose:</strong> Analyze product ingredients for
                 potential irritants, identify foods and potential allergens,
-                assess skin photos for eczema severity and characteristics,
-                provide personalized recommendations
+                and provide personalized tracking support
               </p>
               <p>
                 <strong>Important Notes:</strong> As of our last verification,
@@ -557,10 +562,11 @@ export default function PrivacyPolicy() {
               </p>
 
               <h3 className="font-semibold text-sage-900 mt-6 mb-3">
-                7.5 OpenFoodFacts
+                7.5 Product and Barcode Databases
               </h3>
               <p>
-                <strong>Services Used:</strong> Open-source food product database
+                <strong>Services Used:</strong> Third-party barcode and product
+                lookup providers, including Go-UPC
               </p>
               <p>
                 <strong>Data Shared:</strong> Barcode numbers when you scan
@@ -571,13 +577,13 @@ export default function PrivacyPolicy() {
                 ingredient lists, and nutritional data for scanned barcodes
               </p>
               <p>
-                <strong>Privacy:</strong> OpenFoodFacts is an open database.
-                Barcode lookups do not contain personally identifiable
-                information. Learn more at https://world.openfoodfacts.org/privacy-policy
+                <strong>Privacy:</strong> Barcode lookups do not contain your
+                name or email address, but the barcode value and lookup context
+                may be processed by the provider.
               </p>
 
               <h3 className="font-semibold text-sage-900 mt-6 mb-3">
-                7.6 Apple App Store and Google Play Store
+                7.6 Apple App Store
               </h3>
               <p>
                 <strong>Services Used:</strong> App distribution, in-app
@@ -589,12 +595,11 @@ export default function PrivacyPolicy() {
               </p>
               <p>
                 <strong>Purpose:</strong> Process Eczemate Pro subscriptions and
-                in-app purchases
+                in-app purchases on iOS
               </p>
               <p>
-                <strong>Privacy Policies:</strong> Apple Privacy Policy at
-                https://www.apple.com/privacy/ and Google Privacy Policy at
-                https://policies.google.com/privacy
+                <strong>Privacy Policy:</strong> Apple Privacy Policy at
+                https://www.apple.com/privacy/
               </p>
             </Section>
 
@@ -622,10 +627,10 @@ export default function PrivacyPolicy() {
                   eczema trigger foods.
                 </li>
                 <li>
-                  <strong>Skin Photo Analysis:</strong> Skin photos are
-                  processed by AI vision models to assess eczema severity,
-                  identify affected areas, and track changes over time. This
-                  helps you visualize your progress and identify patterns.
+                  <strong>Pattern Support:</strong> Eczemate may use AI and
+                  local analysis to help organize your logs and surface
+                  patterns. It does not diagnose skin conditions or assess
+                  skin severity from photos.
                 </li>
               </ul>
 
@@ -1196,10 +1201,7 @@ export default function PrivacyPolicy() {
                   data
                 </li>
                 <li>Choose not to use AI analysis features</li>
-                <li>
-                  Use an anonymous/guest account instead of signing in with
-                  Apple Sign In
-                </li>
+                <li>Choose not to submit optional website waitlist forms</li>
                 <li>
                   Control camera and photo access through device settings
                 </li>

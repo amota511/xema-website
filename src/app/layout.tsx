@@ -16,10 +16,10 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tryeczemate.com"),
-  title: "Eczemate — Stay Ahead of Eczema Flare-Ups",
+  metadataBase: new URL("https://eczemate.app"),
+  title: "Eczemate - Eczema Tracking for Children and Adults",
   description:
-    "Predict flare-ups before they happen, track your symptoms, scan products for irritants, and learn what triggers your skin. Eczemate helps you take control of eczema.",
+    "Track routines, foods, products, sleep, weather, and notes in one calm place, so eczema patterns are easier to remember.",
   keywords: [
     "eczema",
     "flare prediction",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     "atopic dermatitis",
   ],
   openGraph: {
-    title: "Eczemate — Stay Ahead of Eczema Flare-Ups",
+    title: "Eczemate - Eczema Tracking for Children and Adults",
     description:
-      "Predict flare-ups, track symptoms, scan products, and learn your triggers. Eczema management, simplified.",
+      "Track routines, foods, products, sleep, weather, and notes in one calm place.",
     type: "website",
     images: ["/icon.png"],
   },

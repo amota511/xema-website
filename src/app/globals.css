@@ -50,62 +50,6 @@ body {
   background-size: 256px 256px;
 }
 
-/* Animated gradient mesh background */
-@keyframes gradient-shift {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-.gradient-mesh {
-  background: linear-gradient(
-    135deg,
-    var(--color-sage-50) 0%,
-    var(--color-surface) 25%,
-    var(--color-sage-100) 50%,
-    var(--color-sage-50) 75%,
-    var(--color-surface) 100%
-  );
-  background-size: 400% 400%;
-  animation: gradient-shift 15s ease infinite;
-}
-
-/* Floating blob keyframes (used in Hero background) */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0) scale(1);
-  }
-  33% {
-    transform: translateY(-20px) scale(1.02);
-  }
-  66% {
-    transform: translateY(10px) scale(0.98);
-  }
-}
-
-@keyframes float-reverse {
-  0%, 100% {
-    transform: translateY(0) scale(1) rotate(0deg);
-  }
-  33% {
-    transform: translateY(15px) scale(0.97) rotate(2deg);
-  }
-  66% {
-    transform: translateY(-25px) scale(1.03) rotate(-1deg);
-  }
-}
-
-.blob {
-  animation: float 20s ease-in-out infinite;
-}
-
-.blob-reverse {
-  animation: float-reverse 25s ease-in-out infinite;
-}
-
 /* Link underline animation */
 .link-underline {
   position: relative;
@@ -124,15 +68,4 @@ body {
 
 .link-underline:hover::after {
   width: 100%;
-}
-
-/* Reduced motion support */
-@media (prefers-reduced-motion: reduce) {
-  .blob, .blob-reverse {
-    animation: none;
-  }
-
-  .gradient-mesh {
-    animation: none;
-  }
 }

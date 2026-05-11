@@ -3,9 +3,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { APP_STORE_URL, logWebsiteEvent } from "@/lib/site";
+import AndroidInterestModal from "./AndroidInterestModal";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const [androidOpen, setAndroidOpen] = useState(false);
 
   return (
     <div className="md:hidden">
@@ -65,18 +68,37 @@ export default function MobileMenu() {
                 Terms
               </Link>
               <a
-                href="https://apps.apple.com/us/app/eczemate-eczema-care/id6740091498"
+                href={APP_STORE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
                 className="text-center font-semibold text-white bg-sage-950 px-5 py-3 rounded-xl hover:bg-sage-900 transition-colors"
               >
-                Download
+                Download for iOS
               </a>
+              <button
+                type="button"
+                onClick={() => {
+                  void logWebsiteEvent({
+                    type: "android_download_click",
+                    placement: "mobile_menu",
+                  }).catch(() => {});
+                  setIsOpen(false);
+                  setAndroidOpen(true);
+                }}
+                className="text-center font-semibold text-sage-800 border border-sage-300 px-5 py-3 rounded-xl hover:border-sage-500 hover:bg-white/60 transition-colors"
+              >
+                Download for Android
+              </button>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
+      <AndroidInterestModal
+        isOpen={androidOpen}
+        placement="mobile_menu"
+        onClose={() => setAndroidOpen(false)}
+      />
     </div>
   );
 }

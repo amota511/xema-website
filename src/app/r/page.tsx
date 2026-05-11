@@ -1,12 +1,10 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
 import { useEffect, Suspense } from 'react';
 
-const APP_STORE_URL = 'https://apps.apple.com/us/app/eczemate-eczema-care/id6740091498';
+import { APP_STORE_URL } from '@/lib/site';
 
 function RedirectContent() {
-  const searchParams = useSearchParams();
   useEffect(() => {
     window.location.href = APP_STORE_URL;
   }, []);

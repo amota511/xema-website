@@ -4,8 +4,12 @@ import { motion, useScroll, useTransform, useMotionTemplate } from "framer-motio
 import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
+import { APP_STORE_URL, logWebsiteEvent } from "@/lib/site";
+import AndroidInterestModal from "./AndroidInterestModal";
+import { useState } from "react";
 
 export default function Header() {
+  const [androidOpen, setAndroidOpen] = useState(false);
   const { scrollY } = useScroll();
   const bgOpacity = useTransform(scrollY, [0, 100], [0, 1]);
   const borderOpacity = useTransform(scrollY, [0, 100], [0, 0.15]);
@@ -53,18 +57,36 @@ export default function Header() {
             Terms
           </Link>
           <a
-            href="https://apps.apple.com/us/app/eczemate-eczema-care/id6740091498"
+            href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-semibold text-white bg-sage-950 px-5 py-2.5 rounded-xl hover:bg-sage-900 transition-colors"
           >
-            Download
+            iOS
           </a>
+          <button
+            type="button"
+            onClick={() => {
+              void logWebsiteEvent({
+                type: "android_download_click",
+                placement: "header",
+              }).catch(() => {});
+              setAndroidOpen(true);
+            }}
+            className="text-sm font-semibold text-sage-800 border border-sage-300 px-5 py-2.5 rounded-xl hover:border-sage-500 hover:bg-white/60 transition-colors"
+          >
+            Android
+          </button>
         </div>
 
         {/* Mobile menu */}
         <MobileMenu />
       </nav>
+      <AndroidInterestModal
+        isOpen={androidOpen}
+        placement="header"
+        onClose={() => setAndroidOpen(false)}
+      />
     </motion.header>
   );
 }
