@@ -5,8 +5,8 @@ import DownloadButtons from "./DownloadButtons";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[84vh] overflow-hidden bg-[#F5F1E8]">
-      <div className="absolute inset-0 grain opacity-30 pointer-events-none" />
+    <section className="relative min-h-[84vh] overflow-hidden bg-sage-50">
+      <div className="absolute inset-0 grain opacity-20 pointer-events-none" />
       <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-surface to-transparent" />
 
       <div className="relative z-10 mx-auto flex min-h-[84vh] max-w-7xl flex-col justify-center px-6 pb-24 pt-28">
