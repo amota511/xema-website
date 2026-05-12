@@ -46,13 +46,13 @@ export default function MobileMenu() {
             transition={{ duration: 0.2 }}
           >
             <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-4">
-              <a
-                href="#features"
+              <Link
+                href="/#features"
                 onClick={() => setIsOpen(false)}
                 className="text-sage-700 hover:text-sage-950 py-2 transition-colors"
               >
                 Features
-              </a>
+              </Link>
               <Link
                 href="/privacy"
                 onClick={() => setIsOpen(false)}

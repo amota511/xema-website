@@ -38,12 +38,12 @@ export default function Header() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
-          <a
-            href="#features"
+          <Link
+            href="/#features"
             className="text-sm text-sage-700 hover:text-sage-950 transition-colors link-underline"
           >
             Features
-          </a>
+          </Link>
           <Link
             href="/privacy"
             className="text-sm text-sage-700 hover:text-sage-950 transition-colors link-underline"
