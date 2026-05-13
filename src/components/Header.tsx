@@ -37,46 +37,36 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-5">
           <Link
             href="/#features"
             className="text-sm text-sage-700 hover:text-sage-950 transition-colors link-underline"
           >
             Features
           </Link>
-          <Link
-            href="/privacy"
-            className="text-sm text-sage-700 hover:text-sage-950 transition-colors link-underline"
-          >
-            Privacy
-          </Link>
-          <Link
-            href="/terms"
-            className="text-sm text-sage-700 hover:text-sage-950 transition-colors link-underline"
-          >
-            Terms
-          </Link>
-          <a
-            href={APP_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-semibold text-white bg-sage-950 px-5 py-2.5 rounded-xl hover:bg-sage-900 transition-colors"
-          >
-            iOS
-          </a>
-          <button
-            type="button"
-            onClick={() => {
-              void logWebsiteEvent({
-                type: "android_download_click",
-                placement: "header",
-              }).catch(() => {});
-              setAndroidOpen(true);
-            }}
-            className="text-sm font-semibold text-sage-800 border border-sage-300 px-5 py-2.5 rounded-xl hover:border-sage-500 hover:bg-white/60 transition-colors"
-          >
-            Android
-          </button>
+          <div className="flex items-center gap-1 rounded-2xl border border-sage-200 bg-white/60 p-1 shadow-sm shadow-sage-950/5 backdrop-blur-sm">
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-10 items-center justify-center rounded-xl bg-sage-950 px-4 text-sm font-semibold text-white transition-colors hover:bg-sage-900"
+            >
+              iOS app
+            </a>
+            <button
+              type="button"
+              onClick={() => {
+                void logWebsiteEvent({
+                  type: "android_download_click",
+                  placement: "header",
+                }).catch(() => {});
+                setAndroidOpen(true);
+              }}
+              className="inline-flex h-10 items-center justify-center rounded-xl px-4 text-sm font-semibold text-sage-800 transition-colors hover:bg-sage-100 hover:text-sage-950"
+            >
+              Android waitlist
+            </button>
+          </div>
         </div>
 
         {/* Mobile menu */}

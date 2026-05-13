@@ -53,20 +53,7 @@ export default function MobileMenu() {
               >
                 Features
               </Link>
-              <Link
-                href="/privacy"
-                onClick={() => setIsOpen(false)}
-                className="text-sage-700 hover:text-sage-950 py-2 transition-colors"
-              >
-                Privacy
-              </Link>
-              <Link
-                href="/terms"
-                onClick={() => setIsOpen(false)}
-                className="text-sage-700 hover:text-sage-950 py-2 transition-colors"
-              >
-                Terms
-              </Link>
+              <div className="h-px bg-border/70" />
               <a
                 href={APP_STORE_URL}
                 target="_blank"
@@ -74,7 +61,7 @@ export default function MobileMenu() {
                 onClick={() => setIsOpen(false)}
                 className="text-center font-semibold text-white bg-sage-950 px-5 py-3 rounded-xl hover:bg-sage-900 transition-colors"
               >
-                Download for iOS
+                Download iOS
               </a>
               <button
                 type="button"
@@ -88,7 +75,7 @@ export default function MobileMenu() {
                 }}
                 className="text-center font-semibold text-sage-800 border border-sage-300 px-5 py-3 rounded-xl hover:border-sage-500 hover:bg-white/60 transition-colors"
               >
-                Download for Android
+                Android waitlist
               </button>
             </div>
           </motion.div>
