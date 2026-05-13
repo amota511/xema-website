@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import {
@@ -11,26 +11,39 @@ import {
 type AndroidInterestModalProps = {
   isOpen: boolean;
   placement: WebsiteEventPlacement;
+  ctaLabel: string;
   onClose: () => void;
 };
 
 export default function AndroidInterestModal({
   isOpen,
   placement,
+  ctaLabel,
   onClose,
 }: AndroidInterestModalProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "submitted">("idle");
   const [error, setError] = useState<string | null>(null);
 
+  const closeWithDismiss = useCallback(() => {
+    if (status !== "submitted") {
+      void logWebsiteEvent({
+        type: "android_waitlist_modal_dismiss",
+        placement,
+        ctaLabel,
+      }).catch(() => {});
+    }
+    onClose();
+  }, [ctaLabel, onClose, placement, status]);
+
   useEffect(() => {
     if (!isOpen) return;
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
+      if (event.key === "Escape") closeWithDismiss();
     };
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
-  }, [isOpen, onClose]);
+  }, [closeWithDismiss, isOpen]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -40,6 +53,15 @@ export default function AndroidInterestModal({
       document.body.style.overflow = originalOverflow;
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    void logWebsiteEvent({
+      type: "android_waitlist_modal_view",
+      placement,
+      ctaLabel,
+    }).catch(() => {});
+  }, [ctaLabel, isOpen, placement]);
 
   function resetForm() {
     setEmail("");
@@ -56,6 +78,7 @@ export default function AndroidInterestModal({
       await logWebsiteEvent({
         type: "android_waitlist_signup",
         placement,
+        ctaLabel,
         email,
       });
       setStatus("submitted");
@@ -81,7 +104,7 @@ export default function AndroidInterestModal({
         >
           <button
             className="absolute inset-0 bg-sage-950/45 backdrop-blur-sm"
-            onClick={onClose}
+            onClick={closeWithDismiss}
             aria-label="Close Android interest modal"
           />
 
@@ -94,7 +117,7 @@ export default function AndroidInterestModal({
           >
             <div className="relative w-full overflow-hidden rounded-[28px] bg-white p-7 shadow-2xl shadow-sage-950/25">
               <button
-                onClick={onClose}
+                onClick={closeWithDismiss}
                 className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full text-sage-500 transition-colors hover:bg-sage-50 hover:text-sage-950"
                 aria-label="Close"
               >
@@ -166,7 +189,7 @@ export default function AndroidInterestModal({
                   </form>
 
                   <button
-                    onClick={onClose}
+                    onClick={closeWithDismiss}
                     className="mt-4 w-full text-sm font-medium text-sage-500 transition-colors hover:text-sage-800"
                   >
                     Not now

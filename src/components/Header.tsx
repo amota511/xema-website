@@ -52,6 +52,7 @@ export default function Header() {
               void logWebsiteEvent({
                 type: "android_download_click",
                 placement: "header",
+                ctaLabel: "Android",
               }).catch(() => {});
               setAndroidOpen(true);
             }}
@@ -64,6 +65,7 @@ export default function Header() {
       <AndroidInterestModal
         isOpen={androidOpen}
         placement="header"
+        ctaLabel="Android"
         onClose={() => setAndroidOpen(false)}
       />
     </motion.header>

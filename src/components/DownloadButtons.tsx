@@ -26,6 +26,7 @@ export default function DownloadButtons({
     void logWebsiteEvent({
       type: "android_download_click",
       placement,
+      ctaLabel: "Download for Android",
     }).catch(() => {});
     setAndroidOpen(true);
   }
@@ -68,6 +69,7 @@ export default function DownloadButtons({
       <AndroidInterestModal
         isOpen={androidOpen}
         placement={placement}
+        ctaLabel="Download for Android"
         onClose={() => setAndroidOpen(false)}
       />
     </>

@@ -7,6 +7,8 @@ export const WEBSITE_EVENT_ENDPOINT =
 
 export type WebsiteEventType =
   | "android_download_click"
+  | "android_waitlist_modal_view"
+  | "android_waitlist_modal_dismiss"
   | "android_waitlist_signup";
 
 export type WebsiteEventPlacement =
@@ -18,8 +20,52 @@ export type WebsiteEventPlacement =
 type WebsiteEventPayload = {
   type: WebsiteEventType;
   placement: WebsiteEventPlacement;
+  ctaLabel?: string;
   email?: string;
 };
+
+const SESSION_ID_KEY = "eczemate_website_session_id";
+
+function getSessionId() {
+  if (typeof window === "undefined") return null;
+
+  try {
+    const existing = window.localStorage.getItem(SESSION_ID_KEY);
+    if (existing) return existing;
+
+    const next =
+      window.crypto?.randomUUID?.() ??
+      `web_${Date.now().toString(36)}_${Math.random().toString(36).slice(2)}`;
+    window.localStorage.setItem(SESSION_ID_KEY, next);
+    return next;
+  } catch {
+    return null;
+  }
+}
+
+function getUtmParams() {
+  if (typeof window === "undefined") return null;
+
+  const params = new URLSearchParams(window.location.search);
+  const utm = {
+    source: params.get("utm_source") ?? undefined,
+    medium: params.get("utm_medium") ?? undefined,
+    campaign: params.get("utm_campaign") ?? undefined,
+    content: params.get("utm_content") ?? undefined,
+    term: params.get("utm_term") ?? undefined,
+  };
+
+  return Object.values(utm).some(Boolean) ? utm : null;
+}
+
+function getViewport() {
+  if (typeof window === "undefined") return null;
+  return {
+    width: window.innerWidth,
+    height: window.innerHeight,
+    pixelRatio: window.devicePixelRatio,
+  };
+}
 
 export async function logWebsiteEvent(payload: WebsiteEventPayload) {
   const path =
@@ -27,6 +73,11 @@ export async function logWebsiteEvent(payload: WebsiteEventPayload) {
       ? null
       : `${window.location.pathname}${window.location.search}`;
   const referrer = typeof document === "undefined" ? null : document.referrer;
+  const locale = typeof navigator === "undefined" ? null : navigator.language;
+  const timeZone =
+    typeof Intl === "undefined"
+      ? null
+      : Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   const response = await fetch(WEBSITE_EVENT_ENDPOINT, {
     method: "POST",
@@ -35,6 +86,11 @@ export async function logWebsiteEvent(payload: WebsiteEventPayload) {
       ...payload,
       path,
       referrer,
+      sessionId: getSessionId(),
+      utm: getUtmParams(),
+      locale,
+      timeZone,
+      viewport: getViewport(),
     }),
     keepalive: payload.type === "android_download_click",
   });
